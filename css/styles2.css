@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    margin-left: 25%;
+}
+
+.logo img {
+    margin: 1rem 0;
+}
+
+.head2 {
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.barra2 {
+    padding: 5rem 0 0;
+    text-align: center;
+}
+
+.formu {
+    margin-top: 1rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.deuda {
+    padding: 1.5rem 0;
+    width: 90%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-bottom: 1px solid #cccc;
+}
+
+form {
+    margin-top: 1rem;
+}
+
+.monto {
+    text-align: left;
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: #333333;
+}
+
+.input1 input {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #fff;
+    height: 56px;
+    width: 55%;
+    border-radius: 4px;
+    padding: 11px 15px;
+    border: 1px solid #e9eae8;
+    color: #555555;
+    outline: none;
+}
+
+.boton input {
+    text-align: center;
+    margin: 16px 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 35%;
+    background-color: #5bc500;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1rem 2rem !important;
+    border: none;
+    outline: none;
+}
+
+.boton input:hover {
+    background-color: #499110;
+    cursor: pointer;
+}
+
+small {
+    font-weight: 300;
+    padding: 0.3rem 0.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .parte1 {
+        display: none;
+    }
+
+    .parte3 {
+        display: none;
+    }
+
+    .head2 {
+        display: flex;
+        justify-content: center;
+    }
+}
